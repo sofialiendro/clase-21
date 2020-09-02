@@ -9,3 +9,15 @@ form {
   .input-error {
     border: 1px solid red;
   }
+
+/* cambiar color placeholder */
+
+#name::placeholder {
+  color: palevioletred;
+}
+
+/* cambiar color borde cuando hago click - importante mantener el borde para ACCESIBILIDAD*/
+
+#name:focus {
+  border: 2px solid red;
+}
