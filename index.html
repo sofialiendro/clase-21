@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 21 - Formularios</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+  
+  <form >
+
+    <label for="name">Nombre
+      <input type="text" name="nombre" id="name" placeholder="Nombre..." required>
+    </label>
+
+    <label for="age">Edad
+      <input type="number" name="edad" id="age">
+    </label>
+
+    <p id="check-edad">Al enviar el form (en el submit) vamos a chequear si la edad es mayor a 18</p>
+
+    <label for="email">Email
+      <input type="email" name="email" id="email" placeholder="Email...">
+    </label>
+
+    <label for="passw">Contraseña
+      <input type="password" name="contrasenia" id="passw">
+    </label>
+
+    <label for="tel">Teléfono
+        <input type="number" name="telefono" id="telefono" value="3541">
+      </label>
+
+    <p id="check-passw">En el blur de este campo vamos a chequear si el password tiene menos de 8 letras</p>
+
+    <label for="pets">Mascotas
+      <input type="checkbox" name="mascotas" id="pets" value="cat"> Gato
+      <input type="checkbox" name="mascotas" id="pets" value="dog"> Perro
+      <input type="checkbox" name="mascotas" id="pets" value="parrot"> Loro
+    </label>
+
+    <label for="code">Prefiere codear de 
+      <input type="radio" name="coding" id="code" value="day"> Dia
+      <input type="radio" name="coding" id="code" value="night"> Noche
+    </label>
+
+    <label for="pais">Pais
+    <select name="paises" id="pais">
+      <option value="ar">Argentina</option>
+      <option value="br">Brasil</option>
+      <option value="cl">Chile</option>
+      <option value="co">Colombia</option>
+      <option value="cr">Costa Rica</option>
+      <option value="mx">Mexico</option>
+      <option value="vz">Venezuela</option>
+    </select>
+    </label>
+
+
+  <input type="submit" value="Enviar">
+
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>
