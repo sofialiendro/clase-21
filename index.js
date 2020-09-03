@@ -76,3 +76,19 @@ form.onsubmit = (e) => {
     form.submit()  // para enviarlo
   }
 }
+
+// para ver lo que escribe el usuario en la consola apenas presiona una tecla
+
+inputNombre.oninput = (e) => {    // la e es el evento, tiene q estar para poder verlo
+  console.log(e.target.value);    // target es una propiedad q aparece en la lista y value esta dentro de target
+
+}
+
+
+// para ver la info del evento en sí
+
+inputNombre.oninput = (e) => {    
+  console.log(e); 
+
+}
+
